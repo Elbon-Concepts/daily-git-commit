@@ -25,7 +25,7 @@ const guid = generateRandomWord();
 const newFileName = `${guid}${extension}`;
 
 // Create a new file with the generated name
-fs.writeFile(newFileName, '', (err) => {
+fs.writeFile( `./logs/${newFileName}`, '', (err) => {
   if (err) throw err;
   console.log(`File ${newFileName} has been created`);
 });
